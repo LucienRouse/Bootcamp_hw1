@@ -4,79 +4,96 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <title>Horiseon Marketing</title>
+    <!--You added a more excitiing title ("Horiseon Marketing" instead of "Website")-->
 </head>
 
-<body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
-            <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
-            </ul>
-        </div>
+<!--the initial html had pretty much everything sepperated by div lines. 
+The first thing that I did was to put everything in semantic style, and to change div lines to something more specific
+Below, I changed the div to Header, but had to leave the div in for the unordered links-->
+
+<Header class="header">
+    <h1>Hori<span class="seo">seo</span>n</h1>
+    <div>
+    <ul >
+        <li>
+            <!--You changed the class for each link to "links" so that they can be easily grouped with 
+            the same styling in CSS-->
+            <a href="#search-engine-optimization" class="links" alt="engine_op">Search Engine Optimization</a>
+        </li>
+        <li>
+             <a href="#online-reputation-management" class="links" alt="rep_management">Online Reputation Management</a>
+        </li>
+        <li>
+            <a href="#social-media-marketing" class="links" alt="social_media_marketing">Social Media Marketing</a>
+        </li>
+    </ul>
     </div>
-    <div class="hero"></div>
-    <div class="content">
-        <div class="search-engine-optimization">
+</header>
+
+<body>
+
+<!--You changed div to section-->
+    <section class="hero"></section>
+
+<!--you changed div to nav, becuase this will be the navbar part of the webpage-->
+    <nav class="content">
+        <section id="search-engine-optimization" class="search-engine-optimization">
+            <!--you added an id here, this allows the link on line 20 to find the spot on the page to go to-->
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
             <h2>Search Engine Optimization</h2>
-            <p>
+                <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
+                </p>
+        </section>
+        <section id="online-reputation-management" class="online-reputation-management">
             <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
             <h2>Online Reputation Management</h2>
-            <p>
+                <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
+                </p>
+        </section>
+        <section id="social-media-marketing" class="social-media-marketing">
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
             <h2>Social Media Marketing</h2>
-            <p>
+                <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefit-lead">
+                </p>
+        </section>
+    </nav>
+
+
+<!--Here you changed this div to aside, which will display at the bottom right of the website-->
+    <aside class="benefits">
+        <section class="benefit-lead">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" />
-            <p>
+                <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-        <div class="benefit-brand">
+                </p>
+        </section>
+        <section class="benefit-brand">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" />
-            <p>
+                <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
-        <div class="benefit-cost">
+                </p>
+        </section>
+        <section class="benefit-cost">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png"></img>
-            <p>
+                <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
-    </div>
-    <div class="footer">
+                </p>
+        </section>
+    </aside>
+    <!--you changed this to footer-->
+    <footer class="footer">
         <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
+            <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
-    </div>
+            </p>
+    </footer>
 </body>
 
 </html>
